@@ -34,6 +34,7 @@ realizar en un fracmento dentro de datos o
 print("Metodo upper:" ,name.upper())
 print("metodo lower:" ,name.lower())
 
+
 # concatenacion de STRINGS
 
 first_name = "alejandro"
@@ -42,6 +43,7 @@ full_name = first_name + " " + last_name
 
 print(full_name)
 print(full_name.title())
+
 
 # Whitespases
 """
@@ -64,6 +66,7 @@ print("\t\tpython")
 print("whitespese salto de linea")
 print("languages: \n\tpython\nC\n\tJavasript")
 
+
 # Eliminaccion de espacios en blanco
 
 programing_languages = " python "
@@ -73,3 +76,10 @@ print(programing_languages.lstrip())
 print(programing_languages.strip())
 
 
+# syntax Error con string
+
+message = 'una fortaleza de python es su comunidad'
+print(message)
+
+message = 'una fortaleza de "python" es su comunidad'
+print(message)
