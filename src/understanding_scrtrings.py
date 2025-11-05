@@ -64,7 +64,7 @@ print("\tpython")
 print("\t\tpython")
 
 print("whitespese salto de linea")
-print("languages: \n\tpython\nC\n\tJavasript")
+print("languages: \n\tpython\nC \n\tJavasript")
 
 
 # Eliminaccion de espacios en blanco
@@ -83,3 +83,23 @@ print(message)
 
 message = 'una fortaleza de "python" es su comunidad'
 print(message)
+
+# F-strings
+famous_person_1 = "Taylor Swift"
+message_1 = f"{famous_person_1} una vez dijo, me voy al oxxo en avion"
+print()
+
+print(f"{famous_person_1.upper()} una vez dijo me voy al oxxo en avion")
+# Actividad
+
+"""
+Elije una persona famosa(quien tu quieras)
+Elige una cita famosa de esa persona
+iguala ambos strings a una variable
+
+1) realiza ca concatenaccion utilizando en signo de suma
+2) realiza ls concatenaccion utilizando fstrings
+"""
+famous_person ="Jorge Harrison"
+famous_message ="Amense, los unos a los ortos"
+
