@@ -51,43 +51,76 @@ motorcycles.append('ducati')
 print(motorcycles)#salida ['honda', 'yamaha', 'susuki', 'ducati']
 
 """
+metodo insert() - agrega un elemento en una posicion especifica
+"""
+print("\n--- agregar un elemento en una posicion especifica ---")
+motorcycles=['honda', 'yamaha', 'susuki']       
+print(motorcycles) #salida ['honda', 'yamaha', 'susuki']
+motorcycles.insert(0, 'ducati')
+print(motorcycles) #salida ['ducati', 'honda', 'yamaha', 'susuki']
 
 """
-
-## Eliminar elementos de una lista: remove(), pop(), del, clear()
-print("\n--- Eliminar elementos de una lista: remove(), pop(), del, clear() ---")
-
-frutas = ['manzana', 'platano', 'cereza', 'platano', 'dátil']
-print("Lista inicial:", frutas)
-
-# remove(valor) elimina la primera aparición del valor; lanza ValueError si no existe
-frutas.remove('platano')
-print("Después de frutas.remove('platano') -> elimina la primera 'platano':", frutas)
-
-# pop() elimina y devuelve el último elemento por defecto
-ultimo = frutas.pop()
-print(f"frutas.pop() devolvió: {ultimo}")
-print("Lista ahora:", frutas)
-
-# pop(indice) elimina y devuelve el elemento en el índice dado
-frutas.append('kiwi')
-print("Agregado 'kiwi' para demostrar pop(0):", frutas)
-primero = frutas.pop(0)
-print(f"frutas.pop(0) devolvió: {primero}")
-print("Lista después de pop(0):", frutas)
-
-# del elimina un elemento por índice sin devolverlo
-frutas.append('mango')
-print("Agregado 'mango' para demostrar del:", frutas)
-del frutas[1]
-print("Después de del frutas[1]:", frutas)
-
-# clear() vacía la lista
-frutas.clear()
-print("Después de frutas.clear():", frutas)
-
-# Nota: remove() busca por valor; pop() por índice (o último si no se pasa índice);
-# del trabaja por índice; clear() deja la lista vacía.
+eliminar elementos de la lista por indice
+.pop()
+"""         
+print("\n--- eliminar elementos de la lista por indice ---")
+motorcycles=['honda', 'yamaha', 'susuki']           
+print(motorcycles) #salida ['honda', 'yamaha', 'susuki']
+popped_motorcycle = motorcycles.pop()
+print(motorcycles) #salida ['honda', 'yamaha']              
+print("La ultima motocicleta que yo tenia era una " + popped_motorcycle.title() + ".")          
 
 
-p
+"""
+metodo remove() - elimina un elemento por valor
+"""
+print("\n--- eliminar un elemento por valor ---")   
+motorcycles=['honda', 'yamaha', 'susuki', 'ducati']
+print(motorcycles) #salida ['honda', 'yamaha', 'susuki', 'ducati']
+motorcycles.remove('ducati')
+print(motorcycles) #salida ['honda', 'yamaha', 'susuki']
+print("\n")
+
+
+
+"""
+metodo sort() - ordena la lista de manera ascendente
+"""
+print("\n--- organizar listas de manera permanente ---")
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("Lista original de carros:", cars)
+cars.sort()
+print("Lista ordenada de carros (sort()):", cars)
+cars.sort(reverse=True)
+print("Lista ordenada de carros en orden descendente (sort(reverse=True)):", cars)
+
+
+"""
+ejemplos:
+
+"""
+print("\n--- ejemplos de listas ---")
+students = ['josue', 'victor', 'ana', 'mike', 'puvlo', 'gerardo']
+print(students)
+desired_student = input("¿que estudiante deseas eliminar? ")
+students.remove(desired_student.strip().lower())
+print(students)
+print("tu has eliminado a " + desired_student.title() + " de la lista de estudiantes.")
+students.reverse()
+print(students)
+
+print(len(students))
+
+
+
+"""
+metodo len() - devuelve el numero de elementos en una lista
+metodo reverse() - invierte el orden de los elementos en la lista
+
+"""
+print("\n--- ejemplos del metodo sorted() ---")
+cars = ['bmw', 'audi', 'toyota', 'subaru', 'ford', 'chevrolet']
+print("Lista original de carros:", cars)
+cars.reverse()      
+sorted_list = sorted(cars)
+print("Lista original de carros:", cars)
