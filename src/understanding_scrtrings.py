@@ -1,5 +1,6 @@
 """
-string variables
+understanding strings en python
+
 
 
 
